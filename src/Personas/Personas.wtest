@@ -1,0 +1,22 @@
+import Personas.*
+import Patovas.*
+
+describe "Patovas" {
+	
+//rochensen
+
+	test "rochensen deja pasar a los mayores de 21 años. vonLukaz tiene 17 entonces
+	no va a poder pasar" {
+		assert.equals( "HOY NO ES TU NOCHE", rochensen.dejarPasarA(vonLukaz))
+	}
+ //rodrigsen
+	test "rodrigsen deja pasar solo a los que tienen remera de color negra. bianker
+	se viste toda de negro, entonces va a poder pasar" {
+		assert.equals("PUEDE PASAR", rodrigsen.dejarPasarA(bianker))
+	}
+	
+//gushtavotruccensen
+	test "gustavotruccensen no deja pasar a nadie. Entonces a gonzen no lo va a dejar pasar"{
+		assert.equals("HOY NO ES TU NOCHE", gushtavotruccensen.dejarPasarA(gonzen))
+	}
+}
