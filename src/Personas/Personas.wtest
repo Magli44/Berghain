@@ -11,7 +11,7 @@ describe "Patovas" {
 	}
  //rodrigsen
 	test "rodrigsen deja pasar solo a los que tienen remera de color negra. bianker
-	se viste toda de negro, entonces va a poder pasar" {
+	se viste toda de negro, entonces va a poder pasar." {
 		assert.equals("PUEDE PASAR", rodrigsen.dejarPasarA(bianker))
 	}
 	
