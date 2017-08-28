@@ -12,6 +12,27 @@ object vonLukaz {
 	method edad() {
 		return edad
 	}
+	method energia(){
+		return energia
+	}
+	method diversion(){
+		return diversion
+	}
+	method bailarEnMainRoom(){
+		energia -= 40
+		diversion += 30
+	}
+	method bailarConDixon(){
+		energia -= 60
+		diversion += 120
+	}
+	method bailarConMarcelDettman(){
+		energia -= energia
+		diversion += 1000
+	}
+	method bailarConTommyMunoz(){
+		energia -= 80
+	} 
 }
 
 object bianker {
@@ -27,6 +48,27 @@ object bianker {
 	method edad() {
 		return edad
 	}
+	method energia(){
+		return energia
+	}
+	method diversion(){
+		return diversion
+	}
+	method bailarEnMainRoom(){
+		energia -= 40
+		diversion += 30
+	}
+	method bailarConDixon(){
+		energia -= 60
+		diversion += 120
+	}
+	method bailarConMarcelDettman(){
+		energia -= energia
+		diversion += 1000
+	}
+	method bailarConTommyMunoz(){
+		energia -= 80
+	} 
 }
 
 object gonzen {
@@ -42,4 +84,25 @@ object gonzen {
 	method edad() {
 		return edad
 	}
+	method energia(){
+		return energia
+	}
+	method diversion(){
+		return diversion
+	}
+	method bailarEnMainRoom(){
+		energia -= 40
+		diversion += 30
+	}
+	method bailarConDixon(){
+		energia -= 60
+		diversion += 120
+	}
+	method bailarConMarcelDettman(){
+		energia -= energia
+		diversion += 1000
+	}
+	method bailarConTommyMunoz(){
+		energia -= 80
+	} 
 }
