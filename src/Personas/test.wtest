@@ -1,0 +1,14 @@
+import Personas.*
+import Club.*
+import Patovas.*
+import DJS.*
+import Pistas.*
+
+describe "todo lo que sucede en el club"{
+	test "vonLukaz intenta entrar al club y dirigirse a la pista mainRoom, rochensen no lo deja porque es menor de edad"{
+		assert.equals("HOY NO ES TU NOCHE", rochensen.dejarPasarA(vonLukaz, mainRoom))
+	}
+	test "gonzen intenta entrar al club y dirigirse al darkRoom, rodrigsen lo deja porque tiene remera negra."{
+		assert.equals("PUEDE PASAR", rodrigsen.dejarPasarA(gonzen, darkRoom))
+	}
+}
