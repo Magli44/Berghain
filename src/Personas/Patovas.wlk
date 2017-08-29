@@ -18,7 +18,7 @@ object rodrigsen {
 		if (persona.remera() == 'negra') {
 			pista.personas().add(persona)
 			return "PUEDE PASAR"
-			 }
+		}
 		else {
 			return "HOY NO ES TU NOCHE"
 		}
@@ -26,7 +26,7 @@ object rodrigsen {
 }
 
 object gushtavotruccensen {
-	method dejarPasarA(persona, pista){
+	method dejarPasarA(persona, pista) {
 		return "HOY NO ES TU NOCHE"
 	}
 }
