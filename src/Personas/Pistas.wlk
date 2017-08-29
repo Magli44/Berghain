@@ -22,10 +22,6 @@ object panoramaBar {
 	method bailarSolo(dj, persona){
 		dj.pasarMusica(persona)
 	}
-	method todosBailanCon(dj){
-		personas.forEach({persona => dj.pasarMusica(persona)})
-		return personas
-	}
 	
 }
 
