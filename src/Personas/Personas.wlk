@@ -18,17 +18,11 @@ object vonLukaz {
 	method diversion() {
 		return diversion
 	}
-	method bailarEnMainRoom() {
-		energia -= 40 diversion += 30
+	method sumarDiversion(cantidad){
+		diversion += cantidad
 	}
-	method bailarConDixon() {
-		energia -= 60 diversion += 120
-	}
-	method bailarConMarcelDettman() {
-		energia -= energia diversion += 1000
-	}
-	method bailarConTommyMunoz() {
-		energia -= 80
+	method restarEnergia(cantidad){
+		energia -= cantidad
 	}
 }
 
@@ -51,17 +45,11 @@ object bianker {
 	method diversion() {
 		return diversion
 	}
-	method bailarEnMainRoom() {
-		energia -= 40 diversion += 30
+	method sumarDiversion(cantidad){
+		diversion += cantidad
 	}
-	method bailarConDixon() {
-		energia -= 60 diversion += 120
-	}
-	method bailarConMarcelDettman() {
-		energia -= energia diversion += 1000
-	}
-	method bailarConTommyMunoz() {
-		energia -= 80
+	method restarEnergia(cantidad){
+		energia -= cantidad
 	}
 }
 
@@ -84,16 +72,10 @@ object gonzen {
 	method diversion() {
 		return diversion
 	}
-	method bailarEnMainRoom() {
-		energia -= 40 diversion += 30
+	method sumarDiversion(cantidad){
+		diversion += cantidad
 	}
-	method bailarConDixon() {
-		energia -= 60 diversion += 120
-	}
-	method bailarConMarcelDettman() {
-		energia -= energia diversion += 1000
-	}
-	method bailarConTommyMunoz() {
-		energia -= 80
+	method restarEnergia(cantidad){
+		energia -= cantidad
 	}
 }

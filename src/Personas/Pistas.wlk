@@ -2,40 +2,33 @@ import Personas.*
 import DJS.*
 
 object mainRoom {
-	var personas = #{ }
+	var personas = #{gonzen }
 
 	method personas() {
 		return personas
 	}
-	method hacerBailarATodos() {
-		personas.foreach({ persona => persona.bailarEnMainRoom() })
-		return personas
+	method bailarSolo(persona){
+		persona.restarEnergia(40)
+		persona.sumarDiversion(30)
 	}
 }
 
 object panoramaBar {
-	var dj
-	var personas = #{ }
+	var personas = #{bianker, gonzen}
 
-	method hacerTocarA(unDj) {
-		dj = unDj
-	}
-	method dj() {
-		return dj
-	}
 	method personas() {
 		return personas
 	}
-	method hacerBailarATodos() {
-		if (dj == 'dixon') {
-			personas.map({ persona => persona.bailarConDixon() })
-			return personas
-		} else ( dj == 'marcelDettman' ) 
-		personas.map({ persona => persona.bailarConMarcelDettman() })
+	method bailarSolo(dj, persona){
+		dj.pasarMusica(persona)
+	}
+	method todosBailanCon(dj){
+		personas.forEach({persona => dj.pasarMusica(persona)})
 		return personas
-	} 
+	}
+	
 }
 
 object darkRoom {
-	var personas = #{ }
+	var personas = #{}
 }
